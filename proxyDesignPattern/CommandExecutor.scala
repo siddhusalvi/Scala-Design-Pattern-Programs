@@ -1,5 +1,6 @@
 package proxyDesignPattern
+
 //Interface CommandExecutor
 trait CommandExecutor {
-    def runCommand(cmd:String)
+  def runCommand(cmd: String)
 }
