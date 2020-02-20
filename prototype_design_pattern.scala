@@ -28,7 +28,8 @@ object prototypeDesignPattern {
         flag = false
       }
       catch {
-        case _ => print("Something went wrong Error occurred.")
+        case ex1: ClassNotFoundException => println("Class not found exception occurred")
+        case _ => println("Unknown exception occurred.")
       }
     }
   }
