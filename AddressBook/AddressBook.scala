@@ -1,4 +1,4 @@
-package addressBook;
+package AddressBook;
 import java.io.FileWriter
 import com.google.gson.Gson
 import scala.io.Source
@@ -38,7 +38,7 @@ class AddressBook{
   //Function to load data from file
   def loadData(): Unit = {
     var json_mgr = new Gson()
-    var address_book: String = "/home/admin1/IdeaProjects/Scala-Design-Pattern-Programs/src/main/scala/addressBook/contact.json"
+    var address_book: String = "/home/admin1/IdeaProjects/Scala-Design-Pattern-Programs/src/main/scala/AddressBook/contact.json"
     var strGrains = getFileData(address_book)
     var data: Array[Person] = json_mgr.fromJson(strGrains, classOf[Array[Person]])
     printDetails(data)
